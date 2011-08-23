@@ -25,6 +25,8 @@ import play.mvc.Controller;
 
 /**
  * The Class Application.
+ * 
+ * @author Felipe Oliveira (@_felipera)
  */
 public class Application extends Controller {
 

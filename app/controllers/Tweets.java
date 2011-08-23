@@ -20,6 +20,8 @@ package controllers;
 
 /**
  * The Class Tweets.
+ * 
+ * @author Felipe Oliveira (@_felipera)
  */
 public class Tweets extends CRUD {
 

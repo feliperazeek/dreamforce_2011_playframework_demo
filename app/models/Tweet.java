@@ -29,6 +29,8 @@ import play.db.jpa.Model;
 
 /**
  * The Class Tweet.
+ * 
+ * @author Felipe Oliveira (@_felipera)
  */
 @Entity
 public class Tweet extends Model {
