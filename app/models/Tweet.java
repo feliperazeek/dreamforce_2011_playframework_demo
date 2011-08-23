@@ -16,45 +16,49 @@
  * @author Felipe Oliveira (http://mashup.fm)
  * 
  */
-package controllers;
+package models;
 
+import java.util.Date;
 import java.util.List;
 
-import models.Tweet;
-import play.mvc.Controller;
+import javax.persistence.Entity;
+
+import play.data.validation.MaxSize;
+import play.data.validation.Required;
+import play.db.jpa.Model;
 
 /**
- * The Class Application.
+ * The Class Tweet.
  */
-public class Application extends Controller {
+@Entity
+public class Tweet extends Model {
+
+	/** The tweet. */
+	@Required
+	@MaxSize(140)
+	public String tweet;
+
+	/** The create date. */
+	@Required
+	public Date createDate = new Date();
 
 	/**
-	 * Index.
-	 */
-	public static void index() {
-		List<Tweet> tweets = Tweet.findLatest();
-		render(tweets);
-	}
-
-	/**
-	 * Creates the.
+	 * Find latest.
 	 * 
-	 * @param msg
-	 *            the msg
+	 * @return the list
 	 */
-	public static void create(String msg) {
-		Tweet tweet = new Tweet();
-		tweet.tweet = msg;
-		tweet.save();
-		render(tweet);
+	public static List<Tweet> findLatest() {
+		return Tweet.find("order by createDate desc").fetch();
 	}
 
 	/**
-	 * Tweets.
+	 * CRUD To String
+	 * 
+	 * @see play.db.jpa.JPABase#toString()
 	 */
-	public static void tweets() {
-		List<Tweet> tweets = Tweet.findLatest();
-		renderJSON(tweets);
+	@Override
+	public String toString() {
+		return this.tweet;
 	}
 
 }

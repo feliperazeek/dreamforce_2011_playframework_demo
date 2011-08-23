@@ -18,43 +18,9 @@
  */
 package controllers;
 
-import java.util.List;
-
-import models.Tweet;
-import play.mvc.Controller;
-
 /**
- * The Class Application.
+ * The Class Tweets.
  */
-public class Application extends Controller {
-
-	/**
-	 * Index.
-	 */
-	public static void index() {
-		List<Tweet> tweets = Tweet.findLatest();
-		render(tweets);
-	}
-
-	/**
-	 * Creates the.
-	 * 
-	 * @param msg
-	 *            the msg
-	 */
-	public static void create(String msg) {
-		Tweet tweet = new Tweet();
-		tweet.tweet = msg;
-		tweet.save();
-		render(tweet);
-	}
-
-	/**
-	 * Tweets.
-	 */
-	public static void tweets() {
-		List<Tweet> tweets = Tweet.findLatest();
-		renderJSON(tweets);
-	}
+public class Tweets extends CRUD {
 
 }

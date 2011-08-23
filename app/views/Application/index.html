@@ -1,4 +1,37 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
 
-#{welcome /}
+<!-- Create Tweet Form -->
+<form>
+	<input type="text" name="tweet" value="" />
+	<input type="submit" value="Tweet">
+</form>
+
+<!-- Latest Tweets List -->
+<ul>
+	#{list tweets}
+		<li>${_.tweet} (${_.createDate.since()})</li>
+	#{/list}
+</ul>
+
+<!-- JS -->
+<script type="text/javascript">
+
+	// Capture Form Submit Event
+	$('form').submit(function() {
+		// Define Create Action
+		var createAction = #{jsAction @create(':tweet') /}
+		
+		// Call Create Action
+		$.post(createAction({tweet: $('input:first').val()}), function(data) {
+			// Prepend Results to the List
+			$('ul').prepend(data);
+			$('input:first').val('');
+
+		});
+		
+		// Don't let the browser redirect
+		return false;
+	});
+
+</script>
