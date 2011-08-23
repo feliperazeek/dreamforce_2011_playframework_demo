@@ -1,0 +1,20 @@
+bin/
+data/
+db/
+dist/
+eclipse/
+logs/
+nbproject/
+precompiled/
+test-results/
+tmp/
+
+# Let Play manage dependencies
+lib/*
+#!<Add custom libraries here>
+modules/
+
+*.classpath
+*.project
+*.settings
+dev.env
