@@ -1,12 +1,103 @@
-body { 
-	background-image: url('http://www.socialestates.com/themes/trotz/bg.jpg'); 
-	text-shadow: 0px 1px 2px #555; 
-	font-family: 'Verdana';
-}
-
-input:text {
-  -moz-box-shadow:0px 0px 2px;
-  -webkit-box-shadow:0px 0px 2px;
-  box-shadow:0px 0px 2px;
-  text-shadow:0px 0px 8px rgba(255, 255,255, 1);
-}
+			body {
+				background-image: url('http://www.socialestates.com/themes/trotz/bg.jpg');
+				text-shadow: 0px 1px 2px #555;
+			}
+				
+			input:text {
+				-moz-box-shadow:0px 0px 2px;
+				-webkit-box-shadow:0px 0px 2px;
+				box-shadow:0px 0px 2px;
+				text-shadow:0px 0px 8px rgba(255, 255,255, 1);
+			}
+			
+			form {
+				width: 430px;
+				margin: 20px auto;
+				background: #FFF;
+			
+				border-radius: 10px;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+			
+				box-shadow: 0 0 7px 0px #92bde0 inset, 0 0 16px 0px #92bde0;
+				-moz-box-shadow: 0 0 7px 0px #92bde0 inset, 0 0 16px 0px #92bde0;
+				-webkit-box-shadow: 0 0 7px 0px #92bde0 inset, 0 0 16px 0px #92bde0;
+			
+				background: -webkit-gradient(
+					linear,
+					left bottom,
+					left top,
+					color-stop(0, rgb(255,255,255)),
+					color-stop(0.41, rgb(217,217,217)),
+					color-stop(1, rgb(255,255,255))
+				);
+				background: -moz-linear-gradient(
+					center bottom,
+					rgb(255,255,255) 0%,
+					rgb(217,217,217) 41%,
+					rgb(255,255,255) 100%
+				);
+			
+				-webkit-box-reflect: below 10px
+					-webkit-gradient(linear, left top, left bottom,
+							   from(transparent), to(rgba(255, 255, 255, 0.2)));
+			}
+			
+			form fieldset {
+				border: 0;
+			}
+			
+			form fieldset input {
+				text-align: center;
+				width: 400px;
+				margin: 10px 0;
+				padding: 12px 0;
+				border: 0;
+				font: 28px Verdana, Arial, sans-serif;
+	
+				border-radius: 10px;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+	
+				box-shadow: 1px 1px 0 0 #FFF, 5px 5px 40px 2px #BBB inset;
+				-moz-box-shadow:1px 1px 0 0 #FFF, 5px 5px 40px 2px #BBB inset;
+				-webkit-box-shadow: 1px 1px 0 0 #FFF, 5px 5px 40px 2px #BBB inset;
+	
+				-webkit-background-clip: padding-box;
+			}
+			
+			form fieldset input#submit {
+				cursor: pointer;
+	
+				box-shadow: 0 0 4px 0 #666;
+				-moz-box-shadow: 0 0 4px 0 #666;
+				-webkit-box-shadow: 0 0 4px 0 #666;
+	
+				background: -webkit-gradient(
+					linear,
+					left bottom,
+					left top,
+					color-stop(0, rgb(237,237,237)),
+					color-stop(0.41, rgb(217,217,217)),
+					color-stop(1, rgb(255,255,255))
+				);
+				background: -moz-linear-gradient(
+					center bottom,
+					rgb(237,237,237) 0%,
+					rgb(217,217,217) 41%,
+					rgb(255,255,255) 100%
+				);
+			}
+			
+			form fieldset input#submit:hover {
+				color: #fff;
+				background: -webkit-gradient(linear, center top, center bottom, from(#b8d8f2), color-stop(25%, #92bde0), color-stop(50%, #3282c2), color-stop(75%, #92bde0), to(#b8d8f2)); 
+				background: -moz-linear-gradient(center top, #b8d8f2, #92bde0 25%, #3282c2 50%, #92bde0 75%, #b8d8f2);
+			}
+						
+			ul li {
+				list-style: none;
+				text-align: center;
+				font: 24px Verdana, Arial, sans-serif;
+				color: #0071D8;
+			}
