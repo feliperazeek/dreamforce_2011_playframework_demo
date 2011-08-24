@@ -1,103 +1,110 @@
-			body {
-				background-image: url('http://www.socialestates.com/themes/trotz/bg.jpg');
-				text-shadow: 0px 1px 2px #555;
-			}
-				
-			input:text {
-				-moz-box-shadow:0px 0px 2px;
-				-webkit-box-shadow:0px 0px 2px;
-				box-shadow:0px 0px 2px;
-				text-shadow:0px 0px 8px rgba(255, 255,255, 1);
-			}
-			
-			form {
-				width: 430px;
-				margin: 20px auto;
-				background: #FFF;
-			
-				border-radius: 10px;
-				-moz-border-radius: 10px;
-				-webkit-border-radius: 10px;
-			
-				box-shadow: 0 0 7px 0px #92bde0 inset, 0 0 16px 0px #92bde0;
-				-moz-box-shadow: 0 0 7px 0px #92bde0 inset, 0 0 16px 0px #92bde0;
-				-webkit-box-shadow: 0 0 7px 0px #92bde0 inset, 0 0 16px 0px #92bde0;
-			
-				background: -webkit-gradient(
-					linear,
-					left bottom,
-					left top,
-					color-stop(0, rgb(255,255,255)),
-					color-stop(0.41, rgb(217,217,217)),
-					color-stop(1, rgb(255,255,255))
-				);
-				background: -moz-linear-gradient(
-					center bottom,
-					rgb(255,255,255) 0%,
-					rgb(217,217,217) 41%,
-					rgb(255,255,255) 100%
-				);
-			
-				-webkit-box-reflect: below 10px
-					-webkit-gradient(linear, left top, left bottom,
-							   from(transparent), to(rgba(255, 255, 255, 0.2)));
-			}
-			
-			form fieldset {
-				border: 0;
-			}
-			
-			form fieldset input {
-				text-align: center;
-				width: 400px;
-				margin: 10px 0;
-				padding: 12px 0;
-				border: 0;
-				font: 28px Verdana, Arial, sans-serif;
-	
-				border-radius: 10px;
-				-moz-border-radius: 10px;
-				-webkit-border-radius: 10px;
-	
-				box-shadow: 1px 1px 0 0 #FFF, 5px 5px 40px 2px #BBB inset;
-				-moz-box-shadow:1px 1px 0 0 #FFF, 5px 5px 40px 2px #BBB inset;
-				-webkit-box-shadow: 1px 1px 0 0 #FFF, 5px 5px 40px 2px #BBB inset;
-	
-				-webkit-background-clip: padding-box;
-			}
-			
-			form fieldset input#submit {
-				cursor: pointer;
-	
-				box-shadow: 0 0 4px 0 #666;
-				-moz-box-shadow: 0 0 4px 0 #666;
-				-webkit-box-shadow: 0 0 4px 0 #666;
-	
-				background: -webkit-gradient(
-					linear,
-					left bottom,
-					left top,
-					color-stop(0, rgb(237,237,237)),
-					color-stop(0.41, rgb(217,217,217)),
-					color-stop(1, rgb(255,255,255))
-				);
-				background: -moz-linear-gradient(
-					center bottom,
-					rgb(237,237,237) 0%,
-					rgb(217,217,217) 41%,
-					rgb(255,255,255) 100%
-				);
-			}
-			
-			form fieldset input#submit:hover {
-				color: #fff;
-				background: -webkit-gradient(linear, center top, center bottom, from(#b8d8f2), color-stop(25%, #92bde0), color-stop(50%, #3282c2), color-stop(75%, #92bde0), to(#b8d8f2)); 
-				background: -moz-linear-gradient(center top, #b8d8f2, #92bde0 25%, #3282c2 50%, #92bde0 75%, #b8d8f2);
-			}
-						
-			ul li {
-				list-style: none;
-				text-align: center;
-				font: 24px Verdana, Arial, sans-serif;
-				color: #0071D8;
-			}
+     body { background-color: #ccc; } 
+      
+            form, dl {
+                width: 600px;
+                margin: 20px auto 0 auto;
+                background: #FFF;
+                padding: 0 0 0 5px;
+            
+                border-radius: 10px;
+                -moz-border-radius: 10px;
+                -webkit-border-radius: 10px;
+            
+                box-shadow: 0 0 7px 0 #eee inset, 0 0 16px 0 #ccc;
+                -moz-box-shadow: 0 0 7px 0 #eee inset, 0 0 16px 0 #ccc;
+                -webkit-box-shadow: 0 0 7px 0 #eee inset, 0 0 16px 0 #ccc;
+            
+                background: -webkit-gradient(
+                    linear,
+                    left bottom,
+                    left top,
+                    color-stop(0, #fff),
+                    color-stop(0.41, #ccc),
+                    color-stop(1, #fff)
+                );
+                
+                background: -moz-linear-gradient(
+                    center bottom,
+                    #fff 0%,
+                    #ccc 41%,
+                    #fff 100%
+                );
+            
+                -webkit-box-reflect: below 10px
+                    -webkit-gradient(linear, left top, left bottom,
+                               from(transparent), to(#fff, 0.2)));
+            }
+            
+            fieldset {
+                border: 0;
+                margin-left: 20px; 
+                padding: 0;
+            }
+            
+            input {
+                color: #000;
+                display: inline;
+                margin: 10px 0;
+                padding: 10px;
+                border: 3px solid #fff;
+                font: 36px Georgia, "Times New Roman", Times, serif;
+    
+                border-radius: 10px;
+                -moz-border-radius: 10px;
+                -webkit-border-radius: 10px;
+    
+                box-shadow: 1px 1px 0 0 #FFF, 5px 5px 40px 2px #eee inset;
+                -moz-box-shadow:1px 1px 0 0 #FFF, 5px 5px 40px 2px #eee inset;
+                -webkit-box-shadow: 1px 1px 0 0 #FFF, 5px 5px 40px 2px #eee inset;
+    
+                -webkit-background-clip: padding-box;
+            }
+            
+            input#submit {
+                margin-left: 5px;
+                font: oblique 36px Verdana, "Times New Roman", Times, serif;
+                color: #fff;
+                text-shadow: 0 2px 3px #000;
+                text-transform: lowercase;
+                cursor: pointer;
+    
+                box-shadow: 0 0 4px 0 #eee;
+                -moz-box-shadow: 0 0 4px 0 #eee;
+                -webkit-box-shadow: 0 0 4px 0 #eee;
+    
+                background: -webkit-gradient(
+                    linear,
+                    left bottom,
+                    left top,
+                    color-stop(0, #6c6),
+                    color-stop(0.41, #6bba70),
+                    color-stop(1, #9f9)
+                );
+                
+                background: -moz-linear-gradient(
+                    center bottom,
+                    #6c6 0%,
+                    #6bba70 41%,
+                    #9f9 100%
+                );
+            }
+            
+            input#submit:hover {
+                color: #393;
+                text-shadow: 0 2px 3px #fff;
+            }
+            
+            dl {
+                list-style: none;
+                font: 20px Arial, serif;
+                color: #000;
+                text-transform: capitalize;
+                text-shadow: 0 2px 0 #fcf9ee, 0 4px 0 rgba(0, 0, 0, 0.15);
+                word-wrap: break-word;
+            }
+            
+            dt {
+                margin: 0 20px;
+                padding: 20px 0 5px 0;
+                font-size: 150%;
+            }

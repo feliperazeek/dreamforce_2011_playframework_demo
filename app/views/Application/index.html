@@ -3,16 +3,14 @@
 
 <!-- Create Tweet Form -->
 <form>
-	<fieldset>
-		<input type="text" name="tweet" value="" />
-		<input type="submit" value="Tweet" id="submit">
-	</fieldset>
+	<input type="text" name="tweet" value="" />
+	<input type="submit" value="Tweet" id="submit">
 </form>
 
 <!-- Latest Tweets List -->
-<ul>
+<dl>
 	#{list tweets}
-		<li>${_.tweet} (${_.createDate.since()})</li>
+		<dt>${_.tweet}</dt> <dd>${_.createDate.since()}</dd>
 	#{/list}
 </ul>
 
@@ -27,7 +25,7 @@
 		// Call Create Action
 		$.post(createAction({tweet: $('input:first').val()}), function(data) {
 			// Prepend Results to the List
-			$('ul').prepend(data);
+			$('dl').prepend(data);
 			$('input:first').val('');
 
 		});
